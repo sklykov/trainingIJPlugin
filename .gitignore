@@ -1,0 +1,13 @@
+# IntelliJ specific
+*.iml
+
+# Folders
+target/
+.idea/
+
+# Compiled classes
+*.class
+
+# Log file
+*.log
+

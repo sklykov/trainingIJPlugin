@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- Actually, this is the comment:
+    parent POM - defines all enforcing rewritten fields after!
+    -->
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>27.0.1</version>
+        <relativePath />
+    </parent>
+
+    <!-- Definy the output in the "target" folder -->
+    <packaging>jar</packaging>
+
+    <groupId>trainingIJPlugin</groupId>
+    <artifactId>createdFromScratch</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <id>ssklykov</id>
+            <name>Sergei</name>
+            <url>https://imagej.net/User:ssklykov</url>
+        </developer>
+    </developers>
+
+    <name>Training</name>
+    <description> This project is intended only for training of a plugin creation, using *pom and IJ API</description>
+    <url>BeProvided</url>
+    <inceptionYear>2019</inceptionYear>
+
+    <contributors>
+        <contributor>
+            <name> None Yet </name>
+        </contributor>
+    </contributors>
+
+    <!-- The Travis is used in Fiji -->
+    <ciManagement>
+        <system>NoneYet</system>
+    </ciManagement>
+
+    <!-- Provide url to the Github Issue page -->
+    <issueManagement>
+        <url>BeProvided</url>
+    </issueManagement>
+
+    <mailingLists>
+        <mailingList> <name>NoneYet</name> </mailingList>
+    </mailingLists>
+
+    <properties>
+        <license.licenseName>ToBePointed</license.licenseName>
+        <license.copyrightOwners>Darth Vader</license.copyrightOwners>
+        <!-- For fixing only a failure during install - empty default package name-->
+        <package-name>training</package-name>
+        <main-class>Test2</main-class>
+    </properties>
+
+    <!-- Copied from the Parent POM -->
+    <scm>
+        <connection>scm:git:git://github.com/scijava/pom-scijava</connection>
+        <developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
+        <tag>pom-scijava-27.0.0</tag>
+        <url>https://github.com/scijava/pom-scijava</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Not</name>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>SciComp</name>
+    </organization>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>ij</artifactId>
+            <version>1.52p</version>
+        </dependency>
+    </dependencies>
+
+</project>
