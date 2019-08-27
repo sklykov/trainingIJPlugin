@@ -13,24 +13,24 @@
         <relativePath />
     </parent>
 
-    <!-- Definy the output in the "target" folder -->
+    <!-- Define the output in the "target" folder -->
     <packaging>jar</packaging>
 
     <groupId>trainingIJPlugin</groupId>
     <artifactId>createdFromScratch</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <developers>
         <developer>
             <id>ssklykov</id>
             <name>Sergei</name>
-            <url>https://imagej.net/User:ssklykov</url>
+            <url>https://github.com/ssklykov</url>
         </developer>
     </developers>
 
     <name>Training</name>
     <description> This project is intended only for training of a plugin creation, using *pom and IJ API</description>
-    <url>BeProvided</url>
+    <url>https://github.com/ssklykov/trainingIJPlugin</url>
     <inceptionYear>2019</inceptionYear>
 
     <contributors>
@@ -39,14 +39,14 @@
         </contributor>
     </contributors>
 
-    <!-- The Travis is used in Fiji -->
+    <!-- The Travis CI system is used in Fiji -->
     <ciManagement>
         <system>NoneYet</system>
     </ciManagement>
 
     <!-- Provide url to the Github Issue page -->
     <issueManagement>
-        <url>BeProvided</url>
+        <url>https://github.com/ssklykov/trainingIJPlugin</url>
     </issueManagement>
 
     <mailingLists>
@@ -65,7 +65,7 @@
     <scm>
         <connection>scm:git:git://github.com/scijava/pom-scijava</connection>
         <developerConnection>scm:git:git@github.com:scijava/pom-scijava</developerConnection>
-        <tag>pom-scijava-27.0.0</tag>
+        <tag>pom-scijava-27.0.1</tag>
         <url>https://github.com/scijava/pom-scijava</url>
     </scm>
 
@@ -79,11 +79,20 @@
         <name>SciComp</name>
     </organization>
 
+    <!-- There was a mistake with dependicies import and I have added the section below
+     and, seems, it helps-->
+    <repositories>
+        <repository>
+            <id>scijava.public</id>
+            <url>https://maven.scijava.org/content/groups/public</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>net.imagej</groupId>
-            <artifactId>ij</artifactId>
-            <version>1.52p</version>
+            <artifactId>imagej</artifactId>
+            <version>${imagej.version}</version>
         </dependency>
     </dependencies>
 
