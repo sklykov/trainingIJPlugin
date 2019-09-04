@@ -1,4 +1,5 @@
 import net.imagej.ImageJ;
+import net.imagej.ops.Ops;
 import net.imglib2.IterableInterval;
 import net.imglib2.RandomAccessibleInterval;
 import net.imglib2.img.Img;
@@ -25,6 +26,8 @@ public class Test2 {
         } catch (IOException e) {
             System.out.println("Problem with file opening");
         }
+
+        // ij1.ui().dispose(); // closing the IJ gui and a frame with an opened source image
 
     }
 }

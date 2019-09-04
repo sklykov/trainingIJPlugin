@@ -54,8 +54,8 @@
     </mailingLists>
 
     <properties>
-        <license.licenseName>ToBePointed</license.licenseName>
-        <license.copyrightOwners>Darth Vader</license.copyrightOwners>
+        <license.licenseName>BSD2</license.licenseName>
+        <license.copyrightOwners>ssklykov</license.copyrightOwners>
         <!-- For fixing only a failure during install - empty default package name-->
         <package-name>training</package-name>
         <main-class>Test2</main-class>
@@ -79,7 +79,7 @@
         <name>SciComp</name>
     </organization>
 
-    <!-- There was a mistake with dependicies import and I have added the section below
+    <!-- There was a mistake with dependencies import and I have added the section below
      and, seems, it helps-->
     <repositories>
         <repository>
