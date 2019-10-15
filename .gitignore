@@ -1,9 +1,12 @@
 # IntelliJ specific
 *.iml
+.checksums
 
 # Folders
 target/
 .idea/
+Documents/
+Docs/
 
 # Compiled classes
 *.class
